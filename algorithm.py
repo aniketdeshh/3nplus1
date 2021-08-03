@@ -1,13 +1,19 @@
-current = int(input('Enter a positive integer >> '))
-previous = 0
+class Algorithm:
+    def __init__(self, current):
+        self.current = current
+        self.previous = 0
+        self.nums = [self.current]
+    def loop(self):
+        while self.current != 1.0:
+            self.previous = self.current
+            if self.current % 2 == 0:  
+                self.current /= 2
+            else:
+                self.current *= 3
+                self.current += 1
+            self.nums.append(self.current)
+        
+            
 
-while current != 1.0:
-    previous = current
-    if current % 2 == 0:  
-        current /= 2
-    else:
-        current *= 3
-        current += 1
-    print(current)
 
 
