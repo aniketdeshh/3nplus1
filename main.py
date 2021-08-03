@@ -9,5 +9,5 @@ algo.loop()
 x = [i for i in range(1, len(algo.nums)+1)]
 y = algo.nums
 
-plot = Plotter(x, y)
-plot.plot()
+graph = Plotter(x, y)
+graph.plot()
